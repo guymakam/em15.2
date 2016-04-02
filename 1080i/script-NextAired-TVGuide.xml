@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="window">
+    <defaultcontrol always="true">9500</defaultcontrol>
+    <controls>
+        <include>GlobalBackground</include>
+        <include>NextAiredWindow</include>
+		     <include condition="Skin.HasSetting(header.Emtopbar)">Furniture_TopBar</include>
+            <include condition="!Skin.HasSetting(header.Emtopbar)">GlobalTopBar</include>
+			</controls>
+</window>

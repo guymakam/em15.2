@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window type="window" id="1112">
+    <backgroundcolor>Background</backgroundcolor>
+    <defaultcontrol always="true">9501</defaultcontrol>
+    <onunload>SetProperty(HubReturn,1112,home)</onunload>
+    <allowoverlay>false</allowoverlay>
+    <controls>
+				         <include condition="!Skin.HasSetting(skin.2) + !Skin.HasSetting(skin.3)" name="Window_Vod">
+            <param name="categories" value="skinshortcuts-group-x1112" />
+        </include>
+		<include condition="Skin.HasSetting(skin.2) + !Skin.HasSetting(skin.3)" name="Window_Vod2">
+            <param name="categories" value="skinshortcuts-group-x1112" />
+        </include>
+			<include condition="Skin.HasSetting(skin.3)" name="Window_Vod3">
+            <param name="categories" value="skinshortcuts-group-x1112" />
+        </include>
+    </controls>
+</window>
